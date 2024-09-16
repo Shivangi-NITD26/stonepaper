@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background: linear-gradient(to right, #fbd114, #1c47f6);
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    text-align: center;
+    background: #a3a1a1;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    width: 400px;
+    transition: transform 0.3s;
+  }
+  
+  .container:hover {
+    transform: translateY(-10px);
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+    background-color: #fbd114;
+    border-radius: 30%;
+    color: #000000;
+    font-size: 23px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .score-board {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  .badge {
+    background-color: #1c47f6;
+    color: #000000;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 18px;
+  }
+  
+  .score {
+    font-size: 32px;
+    font-weight: bold;
+    color: #000000;
+  }
+  
+  .choices {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+  }
+  
+  .choice {
+    background-color: #eee;
+    border-radius: 50%;
+    padding: 30px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, background-color 0.3s;
+  }
+  
+  .choice:hover {
+    background-color: #1c47f6;
+    transform: scale(1.1);
+  }
+  
+  .choice i {
+    font-size: 50px;
+    color: #fbd114;
+  }
+  
+  #result {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #0b0b0b;
+  }
+  
+  #result p {
+    color: #333;
+  }
+  
+  
+  .winner {
+    background-color: #16d316 !important;
+  }
+  
+  .loser {
+    background-color: #f02020 !important;
+  }
+  
+  .draw {
+    background-color: #281111da !important;
+  }
+  
